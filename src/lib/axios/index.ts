@@ -39,6 +39,7 @@ axiosProtected.interceptors.response.use(
   async (error) => {
     if (error.response?.status === 401) {
       // Handle unauthorized error (e.g., clear token and redirect to login)
+      //
       localStorage.removeItem("token");
       window.location.href = "/signin";
     }
