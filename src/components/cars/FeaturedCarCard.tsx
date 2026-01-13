@@ -63,7 +63,7 @@ const FeaturedCarCard = ({ car, onViewDetails }: FeaturedCarCardProps) => {
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="w-full" onClick={handleViewDetails}>
+        <Button className="w-full bg-amber-600 hover:bg-amber-700" onClick={handleViewDetails}>
           View Details
         </Button>
       </CardFooter>

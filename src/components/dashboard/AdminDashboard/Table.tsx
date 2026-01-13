@@ -142,7 +142,7 @@ export default function ManageUsers() {
         <CardContent className="p-0">
           <div className="overflow-x-auto rounded-lg">
             <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-blue-100">
+              <thead className="bg-amberr-100">
                 <tr>
                   <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                     #
@@ -168,13 +168,13 @@ export default function ManageUsers() {
                 {users?.map((user, index) => (
                   <tr
                     key={user._id}
-                    className="hover:bg-blue-50 transition-colors"
+                    className="hover:bg-amberr-50 transition-colors"
                   >
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       {index + 1}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 flex items-center gap-2">
-                      <UserIcon className="h-4 w-4 text-blue-400" /> {user.name}
+                      <UserIcon className="h-4 w-4 text-amberrr-400" /> {user.name}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
                       {user.email}
@@ -186,8 +186,8 @@ export default function ManageUsers() {
                           Admin
                         </span>
                       ) : (
-                        <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                          <UserIcon className="h-4 w-4 mr-1 text-blue-500" />{" "}
+                        <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-amberrrr-100 teaamamberue-800">
+                          <UserIcon className="h-4 w-4 mr-1 text-amberrr-500" />{" "}
                           User
                         </span>
                       )}
@@ -209,7 +209,7 @@ export default function ManageUsers() {
                       <Button
                         onClick={() => handleUpdate(user)}
                         variant="outline"
-                        className="text-blue-600 hover:bg-blue-100"
+                        className="text-amberr-600 hover:bgaambere-100"
                         size="icon"
                         aria-label="Edit"
                       >
@@ -236,7 +236,7 @@ export default function ManageUsers() {
       <Dialog open={editModalOpen} onOpenChange={setEditModalOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle className="text-xl font-bold text-blue-700">
+            <DialogTitle className="text-xl font-bold text-amber-700">
               Edit User Details
             </DialogTitle>
           </DialogHeader>
@@ -299,7 +299,7 @@ export default function ManageUsers() {
                 <Button
                   onClick={submitUpdate}
                   disabled={isSubmitting}
-                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                  className="bg-amber-600 hover:bg-amber-700 text-white"
                 >
                   {isSubmitting ? "Updating..." : "Update User"}
                 </Button>

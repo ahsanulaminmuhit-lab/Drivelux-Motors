@@ -33,11 +33,6 @@ export function AppSidebar() {
       url: "/dashboard/adminOrders",
       icon: "ShoppingCartIcon",
     },
-    {
-      name: "Add Products",
-      url: "/dashboard/addProduct",
-      icon: "ShoppingCartIcon",
-    },
   ];
 
   const userMenuItems = [
@@ -50,9 +45,9 @@ export function AppSidebar() {
       : [...projects, ...userMenuItems];
   return (
     <Sidebar>
-      <SidebarContent>
+      <SidebarContent className="bg-gray-100">
         <SidebarGroup>
-          <SidebarGroupLabel>CarShop</SidebarGroupLabel>
+          <SidebarGroupLabel> <h2  className="font-semibold text-2xl">Drive<span className="text-amber-600">Lux</span></h2></SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {menuItems.map((item) => (

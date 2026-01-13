@@ -9,33 +9,33 @@ import {
 
 const features = [
   {
-    icon: <ShieldCheck className="w-10 h-10 text-blue-500" />,
+    icon: <ShieldCheck className="w-10 h-10 text-amber-500" />,
     title: "Certified Vehicles",
     description: "All our cars undergo a rigorous 150-point inspection",
   },
   {
-    icon: <BadgeCheck className="w-10 h-10 text-blue-500" />,
+    icon: <BadgeCheck className="w-10 h-10 text-amber-500" />,
     title: "Quality Guarantee",
     description:
       "We stand behind every vehicle we sell with a satisfaction guarantee",
   },
   {
-    icon: <Clock className="w-10 h-10 text-blue-500" />,
+    icon: <Clock className="w-10 h-10 text-amber-500" />,
     title: "Fast Delivery",
     description: "Enjoy quick delivery or pickup options for your convenience",
   },
   {
-    icon: <Headphones className="w-10 h-10 text-blue-500" />,
+    icon: <Headphones className="w-10 h-10 text-amber-500" />,
     title: "24/7 Support",
     description: "Our customer service team is available around the clock",
   },
   {
-    icon: <RotateCw className="w-10 h-10 text-blue-500" />,
+    icon: <RotateCw className="w-10 h-10 text-amber-500" />,
     title: "Easy Returns",
     description: "7-day return policy if you're not completely satisfied",
   },
   {
-    icon: <CreditCard className="w-10 h-10 text-blue-500" />,
+    icon: <CreditCard className="w-10 h-10 text-amber-500" />,
     title: "Secure Payment",
     description: "Multiple payment options with state-of-the-art security",
   },
@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">Why Choose Us</h2>
           <p className="mt-4 text-xl text-gray-600">
-            Experience the CarShop difference with our premium services
+            Experience the DriveLux difference with our premium services
           </p>
         </div>
 
@@ -71,14 +71,14 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-blue-600 text-white p-8 rounded-lg text-center">
+        <div className="mt-12 bg-amber-600 text-white p-8 rounded-lg text-center">
           <h3 className="text-2xl font-bold mb-4">Ready for your next car?</h3>
           <p className="text-lg mb-6">
             Join thousands of satisfied customers who found their perfect
             vehicle with us.
           </p>
           <button
-            className="bg-white text-blue-600 px-6 py-3 rounded-md font-semibold hover:bg-blue-100 transition-colors duration-300"
+            className="bg-white text-amber-600 px-6 py-3 rounded-md font-semibold hover:bg-amber-100 transition-colors duration-300"
             onClick={() => (window.location.href = "/allProducts")}
           >
             Browse Our Inventory

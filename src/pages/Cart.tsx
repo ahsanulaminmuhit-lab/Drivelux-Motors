@@ -1,14 +1,11 @@
-//
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import {
   removeFromCart,
   updateQuantity,
   clearCart,
 } from "@/redux/features/cart/cartSlice";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { loadStripe } from "@stripe/stripe-js";
-import { axiosProtected } from "@/lib/axios";
+import {  useState } from "react";
+import {  useNavigate } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import {
@@ -32,8 +29,6 @@ import { toast } from "react-hot-toast";
 import { LoadingOverlay } from "@/components/ui/loading-overlay";
 
 // Use environment variable for the Stripe publishable key
-const STRIPE_PUBLISHABLE_KEY = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
-const stripePromise = loadStripe(STRIPE_PUBLISHABLE_KEY);
 
 const Cart = () => {
   // Using the typed hooks instead of the regular ones
@@ -56,7 +51,7 @@ const Cart = () => {
     }
   };
 
-  const handleCheckout = async () => {
+  const handleCheckout = () => {
     if (!user) {
       toast.error("Please log in to checkout");
       navigate("/signin");
@@ -70,46 +65,11 @@ const Cart = () => {
 
     setIsProcessing(true);
 
-    try {
-      // Call your backend to create a checkout session
-      const response = await axiosProtected.post(
-        "/v1/orders/create-checkout-session",
-        {
-          items: items.map((item) => ({
-            carId: item.id,
-            quantity: item.quantity,
-            price: item.price,
-            title: item.title,
-            image: item.image, // Include image for Stripe display
-          })),
-          email: user.email,
-        }
-      );
-
-      // Access the sessionId from the correct location in the response
-      const { sessionId } = response.data.data;
-
-      if (!sessionId) {
-        throw new Error("No session ID returned from the server");
-      }
-
-      // Redirect to Stripe Checkout
-      const stripe = await stripePromise;
-      const { error } = await stripe!.redirectToCheckout({
-        sessionId: sessionId,
-      });
-
-      if (error) {
-        toast.error(error.message as string);
-      }
-    } catch (error: any) {
-      toast.error(
-        error.response?.data?.message || "Failed to initiate checkout"
-      );
-      console.error("Checkout error:", error);
-    } finally {
-      setIsProcessing(false);
-    }
+    setTimeout(() => {
+    setIsProcessing(false);
+    navigate("/order-success");
+  }, 1500);
+   
   };
 
   if (items.length === 0) {

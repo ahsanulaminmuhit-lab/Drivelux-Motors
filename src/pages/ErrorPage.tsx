@@ -12,7 +12,7 @@ const ErrorPage = () => {
             error?.message ||
             "Sorry, an unexpected error occurred."}
         </p>
-        <Link to="/" className="text-blue-600 hover:text-blue-800">
+        <Link to="/" className="text-amberrr-600 hover:text-amber-800">
           Go back home
         </Link>
       </div>

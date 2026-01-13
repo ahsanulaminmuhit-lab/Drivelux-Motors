@@ -252,7 +252,7 @@ const ProductDetails = () => {
                   >
                     <FaCartPlus className="mr-2" /> Add to Cart
                   </Button>
-                  <Button onClick={handleBuyNow} disabled={isOutOfStock}>
+                  <Button onClick={handleBuyNow} disabled={isOutOfStock} className="bg-amber-600 hover:bg-amber-700">
                     {isOutOfStock ? "Out of Stock" : "Buy Now"}
                   </Button>
                 </div>

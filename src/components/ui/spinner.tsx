@@ -21,7 +21,7 @@ const Spinner = ({
   };
 
   const variantClasses = {
-    primary: "border-blue-600 border-t-transparent text-blue-600",
+    primary: "border-amberr-600 border-t-transparent text-amber-600",
     secondary: "border-gray-600 border-t-transparent text-gray-600",
     light: "border-white border-t-transparent text-white",
   };

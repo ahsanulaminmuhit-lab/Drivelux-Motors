@@ -90,7 +90,7 @@ export default function OrderTable() {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-40">
-        <Loader2 className="h-8 w-8 animate-spin text-blue-500" />
+        <Loader2 className="h-8 w-8 animate-spin text-amber-500" />
         <p className="ml-2 text-gray-600">Loading order data...</p>
       </div>
     );
@@ -113,7 +113,7 @@ export default function OrderTable() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+        <Card className="bg-gradient-to-br from-amber-500 to-amber-600 text-white">
           <CardContent className="p-6">
             <div className="flex items-center justify-between">
               <div>

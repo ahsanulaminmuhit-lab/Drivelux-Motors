@@ -95,7 +95,7 @@ export function TabsTrigger({
         "px-3 py-1.5 text-sm font-medium transition-all",
         "focus:outline-none",
         isActive
-          ? "bg-white text-blue-600 shadow-sm"
+          ? "bg-white text-amberr-600 shadow-sm"
           : "text-gray-600 hover:text-gray-900",
         className
       )}

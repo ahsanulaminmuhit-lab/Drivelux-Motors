@@ -4,7 +4,6 @@ import { useAuth } from "../../hooks/useAuth";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaShoppingCart } from "react-icons/fa";
 import { useAppSelector } from "@/redux/hooks";
-import car_logo from "./../../assets/car_logo.png";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -26,14 +25,14 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <img className="h-20 w-auto" src={car_logo} alt="CarShop Logo" />
+              <h2  className="font-semibold text-2xl">Drive<span className="text-amber-600">Lux</span></h2>
             </Link>
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
+                  className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-amber-600"
                 >
                   {item.label}
                 </Link>
@@ -44,11 +43,11 @@ const Navbar = () => {
           <div className="hidden md:flex md:items-center md:space-x-4">
             <Link
               to="/cart"
-              className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium relative"
+              className="text-gray-700 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium relative"
             >
               <FaShoppingCart className="h-5 w-5" />
               {totalItems > 0 && (
-                <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-amber-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                   {totalItems}
                 </span>
               )}
@@ -58,13 +57,13 @@ const Navbar = () => {
               <>
                 <Link
                   to="/dashboard/profile"
-                  className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-700 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Dashboard
                 </Link>
                 <button
                   onClick={() => logout()}
-                  className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700"
+                  className="bg-amber-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-amber-700"
                 >
                   Logout
                 </button>
@@ -73,13 +72,13 @@ const Navbar = () => {
               <>
                 <Link
                   to="/signin"
-                  className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-700 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Login
                 </Link>
                 <Link
                   to="/signup"
-                  className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700"
+                  className="bg-amber-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-amber-700"
                 >
                   Sign Up
                 </Link>
@@ -90,11 +89,11 @@ const Navbar = () => {
           <div className="flex items-center md:hidden">
             <Link
               to="/cart"
-              className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium relative mr-2"
+              className="text-gray-700 hover:text-amber-600 px-3 py-2 rounded-md text-sm font-medium relative mr-2"
             >
               <FaShoppingCart className="h-5 w-5" />
               {totalItems > 0 && (
-                <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-amber-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                   {totalItems}
                 </span>
               )}
@@ -102,7 +101,7 @@ const Navbar = () => {
 
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-amber-600 focus:outline-none"
             >
               {isOpen ? (
                 <FiX className="h-6 w-6" />
@@ -122,7 +121,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                 onClick={toggleMenu}
               >
                 {item.label}
@@ -132,7 +131,7 @@ const Navbar = () => {
               <>
                 <Link
                   to="/dashboard/profile"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                   onClick={toggleMenu}
                 >
                   Dashboard
@@ -142,7 +141,7 @@ const Navbar = () => {
                     logout();
                     toggleMenu();
                   }}
-                  className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                 >
                   Logout
                 </button>
@@ -151,14 +150,14 @@ const Navbar = () => {
               <>
                 <Link
                   to="/signin"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                   onClick={toggleMenu}
                 >
                   Login
                 </Link>
                 <Link
                   to="/signup"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                   onClick={toggleMenu}
                 >
                   Sign Up

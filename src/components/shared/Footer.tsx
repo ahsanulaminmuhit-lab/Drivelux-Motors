@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">CarShop</h3>
+            <h2  className="font-semibold text-2xl mb-4">Drive<span className="text-amber-600">Lux</span></h2>
             <p className="text-gray-400">
               Your trusted destination for quality used and new cars. Find your
               perfect ride today.
@@ -43,10 +43,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>123 Car Street</li>
-              <li>New York, NY 10001</li>
-              <li>Phone: (555) 123-4567</li>
-              <li>Email: info@carshop.com</li>
+              <li>12th Road</li>
+              <li>Gulshan, Dhaka</li>
+              <li>Phone: (880) 123-4567</li>
+              <li>Email: info@drivelux.com</li>
             </ul>
           </div>
 
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {currentYear} CarShop. All rights reserved.</p>
+          <p>&copy; {currentYear} DriveLux. All rights reserved.</p>
         </div>
       </div>
     </footer>

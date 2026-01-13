@@ -186,7 +186,7 @@ export default function ManageProducts() {
         <CardContent className="p-0">
           <div className="overflow-x-auto rounded-lg">
             <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-blue-100">
+              <thead className="bg-amber-100">
                 <tr>
                   <th className="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                     Brand
@@ -215,7 +215,7 @@ export default function ManageProducts() {
                 {cars.map((car) => (
                   <tr
                     key={car._id}
-                    className="hover:bg-blue-50 transition-colors"
+                    className="hover:bg-amberr-50 transition-colors"
                   >
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                       {car.brand}
@@ -249,7 +249,7 @@ export default function ManageProducts() {
                       <Button
                         onClick={() => handleUpdate(car)}
                         variant="outline"
-                        className="text-blue-600 hover:bg-blue-100"
+                        className="text-amber-600 hover:bg-amber-100"
                         size="icon"
                         aria-label="Edit"
                       >
@@ -277,7 +277,7 @@ export default function ManageProducts() {
       <Dialog open={editModalOpen} onOpenChange={setEditModalOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle className="text-xl font-bold text-blue-700">
+            <DialogTitle className="text-xl font-bold text-amber-700">
               Edit Car Details
             </DialogTitle>
           </DialogHeader>
@@ -365,7 +365,7 @@ export default function ManageProducts() {
                 <Button
                   onClick={submitUpdate}
                   disabled={isSubmitting}
-                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                  className="bg-amber-600 hover:bg-amber-700 text-white"
                 >
                   {isSubmitting ? "Updating..." : "Update"}
                 </Button>

@@ -2,22 +2,22 @@ import { Search, Car, CreditCard, Truck } from "lucide-react";
 
 const steps = [
   {
-    icon: <Search className="w-12 h-12 text-blue-500" />,
+    icon: <Search className="w-12 h-12 text-amber-500" />,
     title: "Browse",
     description: "Search through our extensive inventory of quality vehicles",
   },
   {
-    icon: <Car className="w-12 h-12 text-blue-500" />,
+    icon: <Car className="w-12 h-12 text-amber-500" />,
     title: "Select",
     description: "Choose your perfect car and customize options",
   },
   {
-    icon: <CreditCard className="w-12 h-12 text-blue-500" />,
+    icon: <CreditCard className="w-12 h-12 text-amber-500" />,
     title: "Pay",
     description: "Secure payment process with multiple options available",
   },
   {
-    icon: <Truck className="w-12 h-12 text-blue-500" />,
+    icon: <Truck className="w-12 h-12 text-amber-500" />,
     title: "Receive",
     description: "Fast delivery to your location or pickup from our dealership",
   },
@@ -40,12 +40,12 @@ const HowItWorks = () => {
               key={index}
               className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              <div className="rounded-full bg-blue-100 p-4 mb-4">
+              <div className="rounded-full bg-amber-100 p-4 mb-4">
                 {step.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
               <p className="text-gray-600">{step.description}</p>
-              <div className="mt-4 font-bold text-blue-500">
+              <div className="mt-4 font-bold text-amber-500">
                 Step {index + 1}
               </div>
             </div>

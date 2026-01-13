@@ -12,24 +12,32 @@ import HowItWorks from "../components/home/HowItWorks";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
-import CarCard from "@/components/cars/CarCard";
 
 const bannerSlides = [
   {
     image: "/hero-1.jpg",
-    title: "Find Your Dream Car",
-    description: "Browse through our extensive collection of premium vehicles",
+    title: "Drive the Future Today",
+    description: "Discover cars that match your lifestyle, performance needs, and ambitions.",
   },
   {
     image: "/hero-2.jpg",
-    title: "Best Deals Guaranteed",
-    description: "Get the best prices on quality used and new cars",
+    title: "Unmatched Value, Unbeatable Prices",
+    description: "Handpicked vehicles with transparent pricing and zero compromises.",
   },
   {
     image: "/hero-3.jpg",
-    title: "Expert Service",
-    description:
-      "Our team of experts is here to help you make the right choice",
+    title: "Confidence in Every Mile",
+    description: "Each car is thoroughly inspected to ensure safety, quality, and reliability.",
+  },
+  {
+    image: "/hero-4.jpg",
+    title: "Your Journey, Our Expertise",
+    description: "From selection to financing, our experts guide you every step of the way.",
+  },
+  {
+    image: "/hero-5.jpg",
+    title: "Where Passion Meets Performance",
+    description: "Find vehicles that deliver power, comfort, and an unforgettable driving experience.",
   },
 ];
 
@@ -42,14 +50,14 @@ const Home = () => {
       <section className="relative">
         <Carousel
           plugins={[plugin.current]}
-          className="h-[600px] w-full"
+          className="w-full"
           opts={{
             loop: true,
           }}
         >
           <CarouselContent>
             {bannerSlides.map((slide, index) => (
-              <CarouselItem key={index} className="h-[600px]">
+              <CarouselItem key={index} className="h-screen">
                 <div
                   className="relative h-full w-full bg-cover bg-center"
                   style={{ backgroundImage: `url(${slide.image})` }}
@@ -67,7 +75,7 @@ const Home = () => {
                         asChild
                         size="lg"
                         variant="default"
-                        className="bg-blue-600 hover:bg-blue-700"
+                        className="bg-amber-600 hover:bg-amber-700"
                       >
                         <Link to="/allProducts">Browse Cars</Link>
                       </Button>
