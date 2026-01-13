@@ -4,7 +4,7 @@ const steps = [
   {
     icon: <Search className="w-12 h-12 text-blue-500" />,
     title: "Browse",
-    description: "Search through our extensive inventory of quality vehicles",
+    description: "Search through our extensive inventory of quality Vehicles",
   },
   {
     icon: <Car className="w-12 h-12 text-blue-500" />,

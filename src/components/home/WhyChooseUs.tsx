@@ -17,7 +17,7 @@ const features = [
     icon: <BadgeCheck className="w-10 h-10 text-blue-500" />,
     title: "Quality Guarantee",
     description:
-      "We stand behind every vehicle we sell with a satisfaction guarantee",
+      "We stand Behind every vehicle we sell with a satisfaction Guarantee",
   },
   {
     icon: <Clock className="w-10 h-10 text-blue-500" />,

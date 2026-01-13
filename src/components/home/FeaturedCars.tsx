@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import FeaturedCarCard from "../cars/FeaturedCarCard";
 import { axiosPublic } from "@/lib/axios";
 import { isAuthenticated } from "@/lib/auth";
-import { LoadingOverlay } from "@/components/ui/loading-overlay";
+import { LoadingOverlay } from "@/components/ui/loading-Overlay";
 
 const FeaturedCars = () => {
   const [featuredCars, setFeaturedCars] = useState<Car[]>([]);
