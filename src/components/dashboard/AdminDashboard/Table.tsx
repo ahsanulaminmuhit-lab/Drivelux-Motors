@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/select";
 import { useEffect, useState, ChangeEvent } from "react";
 import { axiosProtected } from "@/lib/axios";
-import { User } from "@/types";
+import { User } from "@/types"; 
 import {
   Pencil,
   Trash2,
