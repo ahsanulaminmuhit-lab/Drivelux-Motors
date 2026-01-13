@@ -14,7 +14,7 @@ interface Order {
     _id: string;
     title: string;
     brand: string;
-    model: string;
+    model: string; 
     image: string;
     price: number;
   };
