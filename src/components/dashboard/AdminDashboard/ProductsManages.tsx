@@ -10,4 +10,4 @@ const ProductsManages = () => {
     );
 };
 
-export default ProductsManages;
+export default ProductsManages; 

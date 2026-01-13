@@ -15,8 +15,8 @@ import {
 import { Switch } from "@/components/ui/switch";
 import { Car, Upload, Save } from "lucide-react";
 import axios from "axios";
-
-const categories = ["Sedan", "SUV", "Truck", "Coupe", "Convertible"];
+ 
+const categories = ["Sedan", "SUV", "Truck", "Coupe", "Convertible"]; 
 const fuelTypes = ["Petrol", "Diesel", "Electric", "Hybrid"];
 const transmissions = ["Automatic", "Manual"];
 

@@ -5,7 +5,7 @@ import ProductAdd from "./ProductAdd";
 const AddProducts = () => {
 
     return(
-      <ProductAdd/>
+      <ProductAdd/> 
     )
 
 };

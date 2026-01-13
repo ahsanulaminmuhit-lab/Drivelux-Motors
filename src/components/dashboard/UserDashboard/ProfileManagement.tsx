@@ -161,7 +161,7 @@ export default function ProfileManagement({
               <div className="flex flex-col items-center mb-6">
                 {/* Avatar Preview */}
                 {profileData.photo ? (
-                  <img
+                  <img 
                     src={profileData.photo}
                     alt="Profile"
                     className="w-20 h-20 rounded-full object-cover border-4 border-blue-200 shadow mb-2"

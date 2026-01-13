@@ -18,7 +18,7 @@ export default function OrderTable() {
   const [orders, setOrders] = useState<Order[] | undefined>();
   const [revenue, setRevenue] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null); 
 
   useEffect(() => {
     fetchOrders();
