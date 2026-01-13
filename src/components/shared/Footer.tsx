@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">CarShop</h3>
             <p className="text-gray-400">
-              Your trusted destination for quality used and new cars. Find your
+              Your trusted destination for quality used and new Cars. Find your
               perfect ride today.
             </p>
           </div>
