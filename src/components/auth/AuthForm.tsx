@@ -125,12 +125,12 @@ export function AuthForm({ mode }: AuthFormProps) {
           <Button className="w-full" type="submit" disabled={isLoading}>
             {isLoading
               ? "Loading..."
-              : mode === "signin"
+              : mode === "Signin"
               ? "Sign In"
               : "Create Account"}
           </Button>
           <div className="text-sm text-center">
-            {mode === "signin" ? (
+            {mode === "Signin" ? (
               <>
                 Don't have an account?{" "}
                 <a href="/signup" className="text-blue-500 hover:underline">
