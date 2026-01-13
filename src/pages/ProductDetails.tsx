@@ -47,7 +47,7 @@ const ProductDetails = () => {
         const response = await axiosPublic.get(`/v1/cars/${id}`);
         setCar(response.data);
       } catch (err: any) {
-        setError(err.response?.data?.message || "Failed to fetch car details");
+        setError(err.response?.data?.message || "Failed to fetch Car details");
       } finally {
         setLoading(false);
       }
