@@ -8,7 +8,7 @@ import { Switch } from "@/components/ui/switch";
 
 export function CarForm() {
   // State to store form values
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({ 
     brand: "",
     model: "",
     year: "",
